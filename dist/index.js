@@ -220,7 +220,7 @@ class MultiLangPlugin {
     }
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (I18nPlugin);
+/* harmony default export */ __webpack_exports__["default"] = (MultiLangPlugin);
 
 /***/ }),
 /* 1 */
