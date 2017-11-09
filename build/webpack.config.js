@@ -9,7 +9,7 @@ const WebpackConfig = {
 
 	output: {
 		path: path.resolve('dist'),
-		filename: `build.js`
+		filename: `index.js`
 	},
 };
 

@@ -2,7 +2,7 @@
     "name": "webpack-multilang-i18n-plugin",
     "version": "1.0.0",
     "description": "Webpack Multi Language I18n Plugin",
-    "main": "index.js",
+    "main": "./dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "NODE_ENV=production webpack --config build/webpack.config.js",
