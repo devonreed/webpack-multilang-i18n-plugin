@@ -147,4 +147,4 @@ class MultiLangPlugin {
     }
 }
 
-export default I18nPlugin;
+export default MultiLangPlugin;
