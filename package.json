@@ -4,7 +4,7 @@
     "description": "Webpack Multi Language I18n Plugin",
     "main": "./dist/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "jest",
         "build": "NODE_ENV=production webpack --config build/webpack.config.js",
         "dev-build": "webpack --config build/webpack.config.js --watch"
     },
@@ -24,6 +24,9 @@
     },
     "homepage": "https://github.com/devonreed/webpack-multilang-i18n-plugin#readme",
     "devDependencies": {
+        "babel-jest": "^19.0.0",
+        "babel-preset-env": "^1.5.1",
+        "jest": "^19.0.2",
         "webpack": "^3.0.0"
     }
 }
