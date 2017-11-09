@@ -23,7 +23,7 @@
         "url": "https://github.com/devonreed/webpack-multilang-i18n-plugin/issues"
     },
     "homepage": "https://github.com/devonreed/webpack-multilang-i18n-plugin#readme",
-    "peerDependencies": {
+    "devDependencies": {
         "webpack": "^3.0.0"
     }
 }
