@@ -1,5 +1,6 @@
 [![npm][npm]][npm-url]
 [![deps][deps]][deps-url]
+[![test][test]][test-url]
 
 # webpack-multilang-i18n-plugin
 Webpack plugin for translating multiple languages post-optimize
