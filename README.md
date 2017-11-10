@@ -9,3 +9,7 @@ Webpack plugin for translating multiple languages post-optimize
 
 [deps]: https://david-dm.org/devonreed/webpack-multilang-i18n-plugin.svg
 [deps-url]: https://david-dm.org/devonreed/webpack-multilang-i18n-plugin
+
+Notes
+
+Manifests
