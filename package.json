@@ -2,7 +2,7 @@
     "name": "webpack-multilang-i18n-plugin",
     "version": "1.0.5",
     "description": "Webpack Multi Language I18n Plugin",
-    "main": "src/index.js",
+    "main": "dist/cjs.js",
     "scripts": {
         "build": "cross-env NODE_ENV=production babel src -d dist --ignore 'src/**/*.test.js'",
         "lint": "eslint --cache src test",
@@ -14,7 +14,7 @@
         "travis:test": "npm run test -- --runInBand"
     },
     "files": [
-        "src"
+        "dist"
     ],
     "repository": {
         "type": "git",
