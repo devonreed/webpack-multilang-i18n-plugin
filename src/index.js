@@ -120,7 +120,7 @@ class MultiLangPlugin {
               let translatedSource = replacement.source();
 
               // Append our global language variable for mapped file lookups
-              if (chunk.chunks.length > 0) {
+              if (chunk.entrypoints.length > 0) {
                 translatedSource = `const MULTILANGPLUGINLANGUAGE = '${lang}';\n${translatedSource}`;
               }
 
