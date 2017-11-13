@@ -33,7 +33,9 @@ class MultiLangPlugin {
       throw new Error('MultiLangPlugin does not support eval mode');
     }
 
-    const [localization, failOnMissing, hideMessage] = this;
+    const localization = this.localization;
+    const failOnMissing = this.failOnMissing;
+    const hideMessage = this.hideMessage;
 
     const name = this.functionName;
 
