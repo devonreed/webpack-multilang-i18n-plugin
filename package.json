@@ -1,6 +1,6 @@
 {
     "name": "webpack-multilang-i18n-plugin",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Webpack Multi Language I18n Plugin",
     "main": "src/index.js",
     "scripts": {
