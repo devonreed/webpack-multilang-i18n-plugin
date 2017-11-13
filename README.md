@@ -1,9 +1,16 @@
 [![npm][npm]][npm-url]
 [![deps][deps]][deps-url]
 [![test][test]][test-url]
+[![coverage][cover]][cover-url]
 
 # webpack-multilang-i18n-plugin
 Webpack plugin for translating multiple languages post-optimize
+
+
+Notes
+
+Manifests
+
 
 [npm]: https://img.shields.io/npm/v/webpack-multilang-i18n-plugin.svg
 [npm-url]: https://npmjs.com/package/webpack-multilang-i18n-plugin
@@ -14,6 +21,5 @@ Webpack plugin for translating multiple languages post-optimize
 [test]:https://img.shields.io/travis/devonreed/webpack-multilang-i18n-plugin.svg
 [test-url]:https://travis-ci.org/devonreed/webpack-multilang-i18n-plugin
 
-Notes
-
-Manifests
+[cover]: https://codecov.io/gh/devonreed/webpack-multilang-i18n-plugin/branch/master/graph/badge.svg
+[cover-url]: https://codecov.io/gh/devonreed/webpack-multilang-i18n-plugin
