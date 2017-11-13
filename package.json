@@ -4,7 +4,7 @@
     "description": "Webpack Multi Language I18n Plugin",
     "main": "src/index.js",
     "scripts": {
-        "build": "NODE_ENV=production webpack --config build/webpack.config.js",
+        "build": "cross-env NODE_ENV=production babel src -d dist --ignore 'src/**/*.test.js'",
         "lint": "eslint --cache src test",
         "security": "nsp check",
         "test": "jest",
@@ -32,8 +32,10 @@
     },
     "homepage": "https://github.com/devonreed/webpack-multilang-i18n-plugin#readme",
     "devDependencies": {
+        "babel-cli": "^6.24.0",
         "babel-jest": "^19.0.0",
         "babel-preset-env": "^1.5.1",
+        "cross-env": "^5.0.1",
         "eslint": "^3.19.0",
         "eslint-config-webpack": "^1.2.1",
         "eslint-plugin-import": "^2.2.0",
