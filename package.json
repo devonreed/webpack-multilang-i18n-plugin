@@ -2,7 +2,7 @@
     "name": "webpack-multilang-i18n-plugin",
     "version": "1.0.2",
     "description": "Webpack Multi Language I18n Plugin",
-    "main": "./dist/index.js",
+    "main": "./src/index.js",
     "scripts": {
         "build": "NODE_ENV=production webpack --config build/webpack.config.js",
         "lint": "eslint --cache src test",
@@ -13,6 +13,9 @@
         "travis:lint": "npm run lint && npm run security",
         "travis:test": "npm run test -- --runInBand"
     },
+    "files": [
+        "./src/index.js"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/devonreed/webpack-multilang-i18n-plugin.git"
