@@ -1,6 +1,6 @@
 /*
   MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
+  Author Devon Reed @devonreed
 */
 import Parser from 'webpack/lib/Parser.js';
 import ConstDependency from 'webpack/lib/dependencies/ConstDependency.js';
