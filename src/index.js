@@ -8,17 +8,13 @@ import ReplaceSource from 'webpack-sources/lib/ReplaceSource.js';
 
 /**
  *
- * @param {object|function} localization
- * @param {object|string} Options object or obselete functionName string
+ * @param {object} localization object, keyed by language code
+ * @param {object} options object
  * @constructor
  */
 class MultiLangPlugin {
-  constructor(localization, options, failOnMissing) {
+  constructor(localization, options) {
     this.options = options || {};
-
-    if (typeof failOnMissing !== 'undefined') {
-      this.options.failOnMissing = failOnMissing;
-    }
 
     this.localization = localization;
     this.functionName = this.options.functionName || '__';
