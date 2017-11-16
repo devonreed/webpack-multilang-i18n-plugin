@@ -20,7 +20,18 @@ npm i -D webpack-multilang-i18n-plugin
 
 <h2 align="center">Usage</h2>
 
-This plugin is an adaptation of the original [i18n Webpack plugin](https://github.com/webpack-contrib/i18n-webpack-plugin) for creating with translations baked in. This plugin solves the problem of slow compilation times for multiple languages by moving the translation process later in the Webpack compilation.
+This plugin is an adaptation of the original [i18n Webpack plugin](https://github.com/webpack-contrib/i18n-webpack-plugin) for creating bundles with translations baked in. This plugin solves the problem of slow compilation times for multiple languages by moving the translation process later in the Webpack compilation.
+
+In order to leverage the functionality of this plugin, at least one of your output filenames will need to use the substitution token `[language]` (in a manner similar to other tokens explained [here](https://webpack.js.org/configuration/output/)). For example, you might have an output definition that looks like the following:
+
+```
+output: {
+  path: utils.resolvePath('public/js/dist'),
+  filename: `[name].[language].js`
+}
+```
+
+In this particular case, if you run the plugin with languages `en` and `fr`, you will end up with files `[name].en.js` and `[name].fr.js` for each of the generated assets.
 
 <h2 align="center">Options</h2>
 
