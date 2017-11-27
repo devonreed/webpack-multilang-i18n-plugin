@@ -117,7 +117,7 @@ class MultiLangPlugin {
 
               // Append our global language variable for mapped file lookups
               if (chunk.entrypoints.length > 0) {
-                translatedSource = `const MULTILANGPLUGINLANGUAGE = '${lang}';\n${translatedSource}`;
+                translatedSource = `window.MULTILANGPLUGINLANGUAGE = '${lang}';\n${translatedSource}`;
               }
 
               // Swap out the language token in the filename for the target language
