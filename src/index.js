@@ -20,6 +20,7 @@ class MultiLangPlugin {
     this.functionName = this.options.functionName || '__';
     this.failOnMissing = !!this.options.failOnMissing;
     this.hideMessage = this.options.hideMessage || false;
+    this.headlessContext = this.options.headlessContext || false;
   }
 
   apply(compiler) {
@@ -117,7 +118,8 @@ class MultiLangPlugin {
 
               // Append our global language variable for mapped file lookups
               if (chunk.entrypoints.length > 0) {
-                translatedSource = `window.MULTILANGPLUGINLANGUAGE = '${lang}';\n${translatedSource}`;
+                const langKey = this.headlessContext ? 'const MULTILANGPLUGINLANGUAGE' : 'window.MULTILANGPLUGINLANGUAGE';
+                translatedSource = `${langKey} = '${lang}';\n${translatedSource}`;
               }
 
               // Swap out the language token in the filename for the target language
