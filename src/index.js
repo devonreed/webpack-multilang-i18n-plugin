@@ -2,6 +2,7 @@
   MIT License http://www.opensource.org/licenses/mit-license.php
   Author Devon Reed @devonreed
 */
+import Entrypoint from 'webpack/lib/Entrypoint.js';
 import Parser from 'webpack/lib/Parser.js';
 import ConstDependency from 'webpack/lib/dependencies/ConstDependency.js';
 import ReplaceSource from 'webpack-sources/lib/ReplaceSource.js';
@@ -117,7 +118,13 @@ class MultiLangPlugin {
               let translatedSource = replacement.source();
 
               // Append our global language variable for mapped file lookups
-              if (chunk.entrypoints.length > 0) {
+              const entrypoints = []
+              for (const chunkGroup of chunk.groupsIterable) {
+                if (chunkGroup instanceof Entrypoint) {
+                  entrypoints.push(chunkGroup);
+                }
+              }
+              if (entrypoints.length > 0) {
                 const langKey = this.headlessContext ? 'const MULTILANGPLUGINLANGUAGE' : 'window.MULTILANGPLUGINLANGUAGE';
                 translatedSource = `${langKey} = '${lang}';\n${translatedSource}`;
               }
@@ -138,7 +145,7 @@ class MultiLangPlugin {
           });
 
           // Remove the untranslated file from the chunk's file list and add the translated files
-          chunk.files.filter(fileName => fileName.indexOf('[language]') === -1);
+          chunk.files = chunk.files.filter(fileName => fileName.indexOf('[language]') === -1);
           chunk.files = chunk.files.concat(translatedFiles);
         });
       });
