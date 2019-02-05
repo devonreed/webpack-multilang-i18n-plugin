@@ -118,7 +118,7 @@ class MultiLangPlugin {
               let translatedSource = replacement.source();
 
               // Append our global language variable for mapped file lookups
-              const entrypoints = []
+              const entrypoints = [];
               for (const chunkGroup of chunk.groupsIterable) {
                 if (chunkGroup instanceof Entrypoint) {
                   entrypoints.push(chunkGroup);
