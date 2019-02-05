@@ -25,6 +25,22 @@
         "i18n",
         "translate"
     ],
+    "jest": {
+        "moduleFileExtensions": [
+            "js",
+            "jsx"
+        ],
+        "moduleDirectories": [
+            "node_modules",
+            "bower_components",
+            "shared"
+        ],
+        "moduleNameMapper": {
+            "^js(.*)$": "<rootDir>/app/javascript/$1",
+            "^vendor(.*)$": "<rootDir>/vendor/$1"
+        },
+        "browser": false
+    },
     "author": "Devon Reed",
     "license": "MIT",
     "bugs": {
@@ -48,7 +64,8 @@
         "nsp": "^3.2.1",
         "randomatic": "^3.1.1",
         "sshpk": "^1.16.1",
-        "tough-cookie": "^3.0.0"
+        "tough-cookie": "^3.0.0",
+        "webpack": "^4.29.1"
     },
     "peerDependencies": {
         "webpack": "^2.0.0 || >= 3.0.0-rc.0 || ^3.0.0",
