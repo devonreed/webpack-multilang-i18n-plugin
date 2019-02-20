@@ -1,6 +1,6 @@
 {
     "name": "webpack-multilang-i18n-plugin",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "description": "Webpack Multi Language I18n Plugin",
     "main": "dist/cjs.js",
     "scripts": {
@@ -56,6 +56,7 @@
         "eslint": "^3.19.0",
         "eslint-config-webpack": "^1.2.1",
         "eslint-plugin-import": "^2.2.0",
+        "handlebars": "^4.0.13",
         "hoek": "^6.1.2",
         "https-proxy-agent": "^2.2.1",
         "jest": "^19.0.2",
