@@ -1,6 +1,6 @@
 {
     "name": "webpack-multilang-i18n-plugin",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "description": "Webpack Multi Language I18n Plugin",
     "main": "dist/cjs.js",
     "scripts": {
@@ -49,7 +49,7 @@
     "homepage": "https://github.com/devonreed/webpack-multilang-i18n-plugin#readme",
     "devDependencies": {
         "babel-cli": "^6.24.0",
-        "babel-jest": "^19.0.0",
+        "babel-jest": "^24.1.0",
         "babel-preset-env": "^1.5.1",
         "cross-env": "^5.0.1",
         "cryptiles": "^4.1.3",
@@ -58,7 +58,7 @@
         "eslint-plugin-import": "^2.2.0",
         "hoek": "^6.1.2",
         "https-proxy-agent": "^2.2.1",
-        "jest": "^19.0.2",
+        "jest": "^24.1.0",
         "lodash": "^4.17.11",
         "merge": "^1.2.1",
         "randomatic": "^3.1.1",
