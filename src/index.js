@@ -132,7 +132,7 @@ class MultiLangPlugin {
               }
 
               // Swap out the language token in the filename for the target language
-              const translatedFileName = fileName.replace('[language].js', `${lang}.js`);
+              const translatedFileName = fileName.replace('[language]', lang);
 
               // Add the file name to the asset list
               compilation.assets[translatedFileName] = {
