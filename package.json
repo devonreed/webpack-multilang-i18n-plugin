@@ -1,6 +1,6 @@
 {
     "name": "webpack-multilang-i18n-plugin",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Webpack Multi Language I18n Plugin",
     "main": "dist/cjs.js",
     "scripts": {
