@@ -115,7 +115,9 @@ class MultiLangPlugin {
                 dep.loc = obj.expression.loc;
                 template.apply(dep, replacement);
               });
-              let translatedSource = replacement.source();
+              let translatedSource = replacement
+                .source()
+                .replace('[language]', lang);
 
               // Append our global language variable for mapped file lookups
               const entrypoints = [];
@@ -130,7 +132,7 @@ class MultiLangPlugin {
               }
 
               // Swap out the language token in the filename for the target language
-              const translatedFileName = fileName.replace('[language]', lang);
+              const translatedFileName = fileName.replace('[language].js', `${lang}.js`);
 
               // Add the file name to the asset list
               compilation.assets[translatedFileName] = {
