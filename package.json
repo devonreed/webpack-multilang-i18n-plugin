@@ -1,6 +1,6 @@
 {
     "name": "webpack-multilang-i18n-plugin",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "description": "Webpack Multi Language I18n Plugin",
     "main": "dist/cjs.js",
     "scripts": {
@@ -10,7 +10,7 @@
         "test": "jest",
         "test:coverage": "jest --collectCoverageFrom='src/**/*.js' --coverage",
         "travis:coverage": "npm run test:coverage -- --runInBand",
-        "travis:lint": "npm run lint && npm run security",
+        "travis:lint": "npm run lint",
         "travis:test": "npm run test -- --runInBand"
     },
     "files": [
