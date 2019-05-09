@@ -53,6 +53,11 @@ class MultiLangPlugin {
 
           // Loop through all files in the chunk
           chunk.files.forEach((fileName) => {
+            // Skip processing sourcemaps
+            if (/.js.map$/.test(fileName)) {
+              return;
+            }
+
             // We only care about files that have the language token
             if (fileName.indexOf('[language]') === -1) {
               return;
